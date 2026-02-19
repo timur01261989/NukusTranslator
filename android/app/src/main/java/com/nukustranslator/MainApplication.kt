@@ -20,10 +20,9 @@ class MainApplication : Application(), ReactApplication {
 
       override fun getUseDeveloperSupport(): Boolean = BuildConfig.DEBUG
 
-      // New Architecture-ni MAJBURAN o‘chiramiz (gradle flag noto‘g‘ri bo‘lsa ham)
+      // MUHIM — majburan o‘chiramiz
       override val isNewArchEnabled: Boolean = false
-
-      override val isHermesEnabled: Boolean = BuildConfig.IS_HERMES_ENABLED
+      override val isHermesEnabled: Boolean = true
     }
 
   override fun onCreate() {
